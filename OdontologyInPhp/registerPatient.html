@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Patient Registration</title>
+    </head>
+    <body>
+        <h1>PATIENT REGISTRATION FORM, FROM PHP</h1>
+        <form action="saveData.php" method="POST">
+            <table style="with: 50%">
+                <tr>
+                    <td>First Name </td>
+                    <td><input type="text" name="firstName"/></td>
+                </tr>
+                
+                <tr>
+                    <td>Last Name </td>
+                    <td><input type="text" name="lastName"/></td>
+                </tr>
+                
+                <tr>
+                    <td>ID Number </td>
+                    <td><input type="numer" name="idNumber"/></td>
+                </tr>
+                
+                <tr>
+                    <td>Phone Number </td>
+                    <td><input type="number" name="phone"/></td>
+                </tr>
+                
+                <tr>
+                    <td>Direction </td>
+                    <td><input type="text" name="direction"/></td>
+                </tr>
+                
+                <tr>
+                    <td>Civil Status</td>
+                    <td>
+                        <input type="checkbox" name="single" checked="checked"/>Single<br>
+                        <input type="checkbox" name="married"/>Married<br>
+                        <input type="checkbox" name="windower" checked="checked"/>Widower<br>
+                       
+                    </td>
+                </tr>
+            </table>
+            
+            <input type="submit" value="Save"/>
+            <input type="reset" value="Empty Fields"/>
+        </form>
+    </body>
+</html>
