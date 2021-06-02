@@ -18,44 +18,44 @@ and open the template in the editor.
 
         
         function HeritageTax ($inheritance){
-            if(($inheritance>0)&&($inheritance<=71.434)){
+            if(($inheritance>0)&&($inheritance<=71434)){
                 $valueR=(0*$inheritance)/100;
                 $basic=0;
                 $array = array($valueR, $basic);
             }
-            if(($inheritance>71.434)&&($inheritance<=142.868)){
+            if(($inheritance>71434)&&($inheritance<=142868)){
                 $valueR=(5*$inheritance)/100;
                 $basic=0;
                 $array = array($valueR, $basic);
             }
-            if(($inheritance>142.868)&&($inheritance<=285.737)){
+            if(($inheritance>142868)&&($inheritance<=285737)){
                 $valueR=(10*$inheritance)/100;
-                $basic=3.572;
+                $basic=3572;
                 $array = array($valueR, $basic);
             }
-            if(($inheritance>285.737)&&($inheritance<=428.635)){
+            if(($inheritance>285737)&&($inheritance<=428635)){
                 $valueR=(15*$inheritance)/100;
-                $basic=17.859;
+                $basic=17859;
                 $array = array($valueR, $basic);
             }
-            if(($inheritance>428.635)&&($inheritance<=571.523)){
+            if(($inheritance>428635)&&($inheritance<=571523)){
                 $valueR=(20*$inheritance)/100;
-                $basic=39.293;
+                $basic=39293;
                 $array = array($valueR, $basic);
             }
-            if(($inheritance>571.523)&&($inheritance<=714.391)){
+            if(($inheritance>571523)&&($inheritance<=714391)){
                 $valueR=(25*$inheritance)/100;
-                $basic=67.871;
+                $basic=67871;
                 $array = array($valueR, $basic);
             }
-            if(($inheritance>714.391)&&($inheritance<=857.240)){
+            if(($inheritance>714391)&&($inheritance<=857240)){
                 $valueR=(30*$inheritance)/100;
-                $basic=103.588;
+                $basic=103588;
                 $array = array($valueR, $basic);
             }
-            if(($inheritance>857.240)){
+            if(($inheritance>857240)){
                 $valueR=(35*$inheritance)/100;
-                $basic=146.443;
+                $basic=146443;
                 $array = array($valueR, $basic);
             }
             return $array;
